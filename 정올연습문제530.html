@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<hr/>
+<h1>530 : 선택제어문 - 자가진단3</h3><br/>
+	<h2>나이를 입력받아 20살 이상이면 "adult"라고 출력하고 그렇지 않으면 몇 년후에 성인이 되는지를 "○ years later"라는 메시지를 출력하는 프로그램을 작성하시오.</h5>
+	<h3>입력 예 : </h3>
+	<h4>18</h4>
+	<h3>출력 예 : </h3>
+	<h4>2 years later</h4>
+<h2>풀이-----------------------------------------------------------------------</h2>
+
+    나이 : <input type="text" id="old"/><p/>
+
+	<button onclick="solve530()">입력</button>
+
+	<p id="result530"></p>
+
+	<script>
+		function solve530(){
+			var age = document.getElementById('old').value;
+			var answer;
+			var year = 20-age;
+				if (age >= 20) {
+					answer = "adult"
+				} else {
+					answer = year + "years later"
+				}
+
+
+			document.getElementById('result530').innerHTML = answer;
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

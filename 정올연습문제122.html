@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<hr/>
+	<h1>122 : 선택제어문 - 형성평가3</h1><br/>
+	<h2>년도를 입력받아 윤년(leap year)인지 평년(common year)인지 판단하는 
+	프로그램을 작성하시오.</h2>
+	<h3>입력 예 : </h3>
+	<h4>2008</h4>
+	<h3>출력 예 : </h3>
+	<h4>leap year</h4>
+</body>
+	년도 : <input type="text" id="year">
+
+	<button onclick="solve122()">입력</button>
+
+	<p id="result122"></p>
+
+	<script>
+		function solve122(){
+			var days = document.getElementById('year').value;
+			var answer;
+				if (days % 4 == 0) {
+					answer = "leap year";
+				} else {answer = "common year";}
+
+			document.getElementById('result122').innerHTML = answer;
+		}
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+</html>

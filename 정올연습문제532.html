@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<hr/>
+	<h1>532 : 선택제어문 - 자가진단5</h1><br/>
+	<h2>두 개의 실수를 입력받아 모두 4.0 이상이면 "A", 모두 3.0 이상이면 "B", 아니면 "C" 라고 출력하는 프로그램을 작성하시오.</h2>
+	<h3>입력 예 : </h3>
+	<h4>4.3 3.5</h4>
+	<h3>출력 예 : </h3>
+	<h4>B</h4>
+	<h3>입력 예2 : </h3>
+	<h4>4.0 2.9</h4>
+	<h3>출력 예2 : </h3>
+	<h4>C</h4>
+<h2>풀이-----------------------------------------------------------------------</h2>
+</body>
+	첫번째 학점 : <input type="text" id="1st.AcademicCredit"/><p/>
+	두번째 학점 : <input type="text" id="2nd.AcademicCredit"/><p/>
+
+	<button onclick="solve532()">입력</button>
+
+	<p id="result532"></p>
+
+<!-- 모두 4.0 이상이면 "A", 모두 3.0 이상이면 "B", 아니면 "C" -->
+	<script>
+		function solve532(){
+			var FirstCredit = document.getElementById('1st.AcademicCredit').value;
+			var SecondCredit = document.getElementById('2nd.AcademicCredit').value;
+			var answer;
+			var grade;
+				if (FirstCredit >= 4.0 && SecondCredit >= 4.0) {
+					answer = "A";
+				} else if (FirstCredit >= 3.0 && SecondCredit >= 3.0) {
+					answer = "B";
+				} else {answer = "C";}
+			document.getElementById('result532').innerHTML = answer;
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

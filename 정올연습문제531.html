@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<hr/>
+	<h1>535 : 선택제어문 - 자가진단8</h1><br/>
+	
+	<h2>복싱체급은 몸무게가<p/> 50.80kg 이하를 Flyweight<p/> 61.23kg 이하를 Lightweight,<p/> 72.57kg 이하를 Middleweight,<p/> 88.45kg 이하를 Cruiserweight,<p/> 88.45kg 초과를 Heavyweight라고 하자.<p/> 몸무게를 입력받아 체급을 출력하는 프로그램을 작성하시오.</h2>
+	
+	<h3>입력 예 : </h3>
+	<h4>87.3</h4>
+	
+	<h3>출력 예 : </h3>
+	
+	<h4>Cruiserweight</h4>
+</body>
+	몸무게 : <input type="text" id="weight">
+
+	<button onclick="solve531()">입력</button>
+
+	<p id="result531"></p>
+
+	<script>
+		function solve531(){
+			var WD = document.getElementById('weight').value;
+			var answer;
+				if (WD <= 50.80) {
+					answer = "Flyweight";
+				} else if (WD > 50.80 && WD <= 61.23) {
+					answer = "Lightweight";
+				} else if (WD > 61.23 && WD <= 72.57) {
+					answer = "Middleweight";
+				} else if (WD > 72.57 && WD <= 88.45) {
+					answer = "Cruiserweight";
+				} else if (WD > 88.45) {
+					answer = "Heavyweight";
+				} else {answer = "error";}
+
+				document.getElementById('result531').innerHTML = answer;
+		}
+
+	</script>
+
+
+
+</html>

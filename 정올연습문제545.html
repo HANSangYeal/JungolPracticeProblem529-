@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>545 : 반복제어문2 - 자가진단5</h1>
+	<h2>10개의 정수를 입력받아 3의 배수의 개수와 5의 배수의 개수를 각각 출력하는 프로그램을 작성하시오.</h2>
+	<h3>입력 예</h3>
+	<h4>10 15 36 99 100 19 46 88 87 13</h4>
+	<h3>출력 예</h3>
+	<h4>Multiples of 3 : 4<p/>Multiples of 5 : 3</h4>
+	<h2>풀이---------------------------------------------------------------------------------------------------------</h2>
+	Number1 : <input type="text" id="inputNum1"><p/>
+	Number2 : <input type="text" id="inputNum2"><p/>
+	Number3 : <input type="text" id="inputNum3"><p/>
+	Number4 : <input type="text" id="inputNum4"><p/>
+	Number5 : <input type="text" id="inputNum5"><p/>
+	Number6 : <input type="text" id="inputNum6"><p/>
+	Number7 : <input type="text" id="inputNum7"><p/>
+	Number8 : <input type="text" id="inputNum8"><p/>
+	Number9 : <input type="text" id="inputNum9"><p/>
+	Number10 : <input type="text" id="inputNum10"><p/>
+
+	<button onclick="solve545()">입력</button>
+	<p id="result545"></p>
+	<p id="result545-1"></p>
+	
+	<script>
+		function solve545(){
+			var inputTag1 = Number(document.getElementById('inputNum1').value);
+			var inputTag2 = Number(document.getElementById('inputNum2').value);
+			var inputTag3 = Number(document.getElementById('inputNum3').value);
+			var inputTag4 = Number(document.getElementById('inputNum4').value);
+			var inputTag5 = Number(document.getElementById('inputNum5').value);
+			var inputTag6 = Number(document.getElementById('inputNum6').value);
+			var inputTag7 = Number(document.getElementById('inputNum7').value);
+			var inputTag8 = Number(document.getElementById('inputNum8').value);
+			var inputTag9 = Number(document.getElementById('inputNum9').value);
+			var inputTag10 = Number(document.getElementById('inputNum10').value);
+
+			var inputTags = [inputTag1, inputTag2, inputTag3, inputTag4, inputTag5, inputTag6, inputTag7, inputTag8, inputTag9, inputTag10];
+
+			var resNum1 = 0;
+			var resNum2 = 0;
+
+			var answer1;
+			for (var i = 0; i <= inputTags.length; i++) {
+				if (inputTags[i] % 3 == 0) {
+					resNum1 += 1;
+				}
+			}
+			
+			document.getElementById('result545').innerHTML = answer1;
+
+			var answer2;
+			for (var i = 0; i <= inputTags.length; i++) {	
+				if (inputTags[i] % 5 == 0) {
+					resNum2 += 1;
+				}
+			}
+
+			document.getElementById('result545-1').innerHTML = answer2;
+		
+		}	
+				
+	</script>
+</body>
+</html>

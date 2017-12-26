@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<hr/>
+	<h1>534 : 선택제어문 - 자가진단7</h1><br/>
+		<h2>영문 대문자를 입력받아 
+		'A'이면 “Excellent”, 
+		'B'이면 “Good”, 
+		'C'이면 “Usually”, 
+		'D'이면 “Effort”, 
+		'F'이면 “Failure”, 
+		그 외 문자이면 “error” 라고 출력하는 프로그램을 작성하시오.</h2>
+		<h3>입력 예 : </h3>
+		<h4>B</h4>
+		<h3>출력 예 : </h3>
+		<h4>Good</h4>
+	
+<h2>풀이-----------------------------------------------------------------------</h2>
+
+	영어 대문자 : <input type="text" id="capital"/><p/>
+
+		<button onclick="solve534()">입력</button>
+
+		<p id="result534"></p>
+
+		<script>
+			function solve534(){
+			var EnglishCapitals = ["Excellent","Good","Usually","Effort","Failure","error"];
+			var sibal = document.getElementById('capital').value;
+			console.log("input : " + sibal);
+				if (sibal == "A") {
+					 document.getElementById('result534').innerHTML = EnglishCapitals[0];
+				} else if (sibal == "B") {
+					 document.getElementById('result534').innerHTML = EnglishCapitals[1];
+				} else if (sibal == "C") {
+					 document.getElementById('result534').innerHTML = EnglishCapitals[2];
+				} else if (sibal == "D") {
+					 document.getElementById('result534').innerHTML = EnglishCapitals[3];
+				} else if (sibal == "F") {
+					 document.getElementById('result534').innerHTML = EnglishCapitals[4];
+				} else {document.getElementById('result534').innerHTML = EnglishCapitals[5];}
+			}	
+
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<hr/>
+	<h1>597 : 문자열1 - 자가진단5</h1><br/>
+	<h2>두 개의 문자열을 입력받아서 두 문자열의 길이의 합을 출력하는 프로그램을 작성하시오. 각 문자열의 길이는 20자 미만이다.</h2>
+	<h4>입력 예 </h4>
+	<h4>Korean<p/>English</h4>
+	<h4>출력 예 </h4>
+	<h4>13</h4>
+<h2>풀이-----------------------------------------------------------------------</h2>
+	<!-- 1.두개의 문자열 입력 -->
+	<!-- 2.입력된 두 문자열의 길이의 합을 구하라 -->
+	<input type="text" id="string1"/>
+	<input type="text" id="string2"/>
+	
+	<button onclick="solve597()">입력</button>
+	
+	<p id="result597"></p>
+
+	<script>
+		function solve597(){
+			var inputStr1 = document.getElementById('string1').value;
+	
+			var inputStr2 = document.getElementById('string2').value;
+				
+			var answer = inputStr1.length + inputStr2.length;
+			
+			document.getElementById('result597').innerHTML = answer;
+		}
+
+	</script>
+
+</body>
+</html>
